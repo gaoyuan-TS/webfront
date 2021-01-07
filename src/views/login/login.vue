@@ -56,7 +56,7 @@ export default {
           if(this.username == 'gaoyuan' || this.password == 'zs123456') {
               this.$router.replace('../home');
           }else (
-              alert("用户名/密码错误")
+               this.$message.error("用户名/密码错误")
           )
         
       },
@@ -70,7 +70,7 @@ export default {
 <style scoped>
     .bkimage{
         background-size:100%;
-        background: url('../../assets/image/2.jpg') no-repeat;
+        background: url("../../assets/image/2.jpg") no-repeat;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -109,9 +109,10 @@ export default {
         width: 100%;
         height: 45px;
         background-color: #ee7700;
-        border: none;
         color: white;
         font-size: 18px;
+        border:0px;
+        outline: #f37b04
     }
 
     .logGet .logD.logDtip .p1 {
@@ -150,7 +151,7 @@ export default {
         color: rgb(22, 17, 17);
         border-style:solid;
         border-color: #03a9f4;
-      	box-shadow: 0 0 15px #03a9f4;
+      	box-shadow: 0 0 5px #03a9f4;
         outline:none
 
     }
@@ -170,6 +171,7 @@ export default {
         margin-right: auto;
         margin-bottom: 0px;
         margin-left: auto;
+        border:0px;
     }
 
 
